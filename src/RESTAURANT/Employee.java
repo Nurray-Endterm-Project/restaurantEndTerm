@@ -2,11 +2,13 @@ package RESTAURANT;
 
 public abstract class Employee {
     private int id;
+    private static int id_gen = 0;
     private String name;
     private String surname;
     private String position;
     private int salary;
     public Employee(String name, String surname, String position){
+        id = id_gen++;
         this.name = name;
         this.surname = surname;
         this.position = position;
