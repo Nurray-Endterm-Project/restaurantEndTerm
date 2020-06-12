@@ -3,6 +3,13 @@ package RESTAURANT;
 public class Administration extends Employee {
     private String login;
     private String password;
+    private String position;
+
+    public Administration(String name, String surname) {
+        super(name, surname);
+        position = "Admin";
+    }
+
     public void changePassword(String pass){
         this.password=pass;
     }

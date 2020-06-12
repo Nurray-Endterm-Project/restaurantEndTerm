@@ -7,11 +7,10 @@ public abstract class Employee {
     private String surname;
     private String position;
     private int salary;
-    public Employee(String name, String surname, String position){
+    public Employee(String name, String surname){
         id = id_gen++;
         this.name = name;
         this.surname = surname;
-        this.position = position;
         salary = 0;
     }
     public int getId(){
